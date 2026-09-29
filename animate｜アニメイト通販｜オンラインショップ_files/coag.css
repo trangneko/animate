@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.ca_pc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 0 5%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    color: #FFFFFF;
+    z-index: 9999;
+}
+.ca_pc p{
+    float:none;
+    padding: 15px 0;
+}
+.ca_pc p a{
+    color:#49bfe2;
+}
+.ca_pc button{
+    float:none;
+    max-width: 100px;
+    min-width: 75px;
+    width: 15%;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border:none;
+    background: #939393;
+    border:none;
+    color:white;
+}
+.ca_pc button:hover{
+    background: #666;
+}
+

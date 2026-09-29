@@ -1,0 +1,302 @@
+@CHARSET "UTF-8";
+/* サジェスト(detailsearch)*/
+.keywords .btn_index {
+width: 20%;
+width: calc(20% - 24px);
+text-align:center;
+}
+.section_keywords summary,
+.section_keywords .more_display .close-btn{
+display: block;
+padding: 12px 0;
+border-top: 1px solid transparent;
+font-size: 13px;
+}
+.section_keywords li.title,
+.disp-eye summary{
+display: block;
+padding: 12px 20px;
+border-top: 1px solid #ddd;
+font-size: 13px;
+}
+
+
+.section_keywords li.title{
+font-size:15px;
+font-weight:bold;
+}
+
+.section_keywords summary i {
+float: right;
+}
+
+.section_keywords li.title img {
+width: 15px;
+padding-right:10px;
+vertical-align: bottom;
+}
+
+.section_keywords .more_display summary,
+.section_keywords .more_display .close-btn{
+text-align:center;
+/*display:flex;*/
+}
+.section_keywords .more_display summary.more-summary::before,
+.section_keywords .more_display summary.more-summary::after,
+.section_keywords .more_display .close-btn::before,
+.section_keywords .more_display .close-btn::after{
+  content: '';
+  background-color: #ddd;
+  height: 1px; 
+  display: inline-block;
+  vertical-align: middle;
+  float:none;
+}
+.section_keywords .more_display summary.more-summary::before,
+.section_keywords .more_display .close-btn::before,
+.section_keywords .more_display summary.more-summary::after,
+.section_keywords .more_display .close-btn::after{
+  width: calc((100% - 30%)/2);
+}
+
+
+.section_keywords ul li span.facet {
+color:gray;
+float:right;
+margin-right:0%;
+font-size:12px;
+width:60px;
+text-align:left;
+}
+
+.btn_index {
+color: #8A8A8A;
+font-size: 13px;
+background-color: #fff;
+border-radius: 5px;
+padding: 8px 8px 8px 12px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+details.accordion-index a.btn_index{
+padding: 8px!important;
+}
+
+.recommended_indexs {
+padding: 10px 15%;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+background-color:#F3F5F6;
+}
+
+.recommended_indexs {
+padding: 10px 15%;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+background-color:#F3F5F6;
+}
+
+ul.fair_event li span {
+float: none;
+display: inline-block;
+margin: 0 5px 0 0;
+border-radius: 15px;
+padding: 4px 8px;
+text-align: center;
+width: 48px;
+}
+
+
+ul.fair_event li span.ltype_1{
+background-color: #D94496;
+color: #fff;
+}
+
+
+ul.fair_event li span.ltype_2{
+background-color: #EF8945;
+color: #fff;
+}
+
+ul.fair_event li span.ltype_3{
+background-color: #325FAB;
+color: #fff;
+}
+
+ul.fair_event li span.ltype_4{
+color: #262626;
+width: 4px;
+padding: 4px;
+border: none;
+margin-right: 0px;
+font-weight: bold;
+}
+
+ul.fair_event li span.ltype_4::after{
+font-family: "FontAwesome";
+font-weight: 900;
+content: "\f105";
+position: absolute;
+right: 5%;
+white-space: nowrap;
+}
+
+.etc_search details.dsearch summary::before {
+color: #325FAB;
+}
+
+.etc_search details.dsearch summary h3{
+color: #000;
+background-color: #fff;
+border-bottom: 1px solid #E8E8E8;
+font-size: 1.3em;
+}
+
+.etc_search details.dsearch .textLists li a:before{
+display: none;
+}
+
+.etc_search details.dsearch .textLists li a{
+border-radius: 10px;
+background :#F3F5F6;
+padding: 5px 10px;
+margin: 8px 0;
+
+border: 1px solid #e8e8e8;
+}
+.etc_search details.dsearch .textLists li a:last-child{
+margin-bottom:auto;
+}
+
+.etc_search details.dsearch .textLists li:has(span.ltype_4) a{
+padding-right: 8%;
+}
+
+.etc_search details.dsearch .textLists li + li {
+border-top:none;
+padding-top:0px;
+}
+
+.etc_search details.dsearch .textLists li a {
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+font-size: 1.4em;
+}
+
+.orderby {
+padding: 0px 5% 15px;
+overflow: hidden;
+background-color: #F3F5F6;
+}
+
+#wordsearch .result{
+font-size: 13px;
+background-color: #F3F5F6;
+}
+
+.toogle_dispstr{
+margin-right: 0px;
+}
+
+.toggle_dispstr span{
+font-size: 13px;
+}
+
+ul.pare_cate {
+    width: 95%;
+    margin-left: 5%;
+}
+@supports (column-count:2) {
+    ul.pare_cate{
+        column-count:2;
+        -webkit-column-count:2;
+        column-gap:1rem;
+        column-fill:auto;
+    }
+}
+
+@supports (display:grid) {
+    ul.pare_cate{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        column-count:auto;
+    }
+}
+
+@supports not (display:grid) {
+    ul.pare_cate{
+        display:flex;
+        flex-wrap:wrap;
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    ul.pare_cate li{
+        width:calc(50% - 0.5rem);
+        box-sizing:border-box;
+        margin-bottom:1rem;
+    }
+}
+details ul.pare_cate li a{
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 12px 8px;
+    font-size: 1.2em;
+}
+
+/* liの数が奇数のときだけ、ひとつ前の要素に下線を付ける */
+details ul.pare_cate li:nth-last-child(2):nth-child(even) > a {
+    border-bottom: 1px solid #ddd;
+}
+
+/* 最後のliは常に下線なし */
+details ul.pare_cate li:last-child > a {
+    border-bottom: none;
+}
+
+details ul.pare_cate li a > i{
+    float:right;
+}
+
+details.accordion-index > summary::before {
+  font-family: FontAwesome;
+  content: '\f067';
+  float:right;
+  color: #325FAB;
+}
+details.accordion-index[open] > summary::before {
+  content: '\f068';
+}
+
+details.disp-eye > summary{
+  font-size: 15px;
+  font-weight: bold;
+}
+details.disp-eye > summary::before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  content: '\f070';
+  float:right;
+  color: #E8E8E8;
+}
+details.disp-eye[open] > summary::before {
+  content: '\f06e';
+}
+.top_section_keywords ul.keywords li a,
+.section_keywords ul.keywords li a i,
+ul.ulcate .child_cate a i{
+    color: #325FAB;
+}
+
+details[open]>.more-summary{
+    opacity:0;height:0;margin:0;padding-top:0;padding-bottom:0;
+}
+    
+summary.more-summary::before{
+    display:none;
+}

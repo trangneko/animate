@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+
+/** common */
+/**************************************/
+div#layouts_mypage_top h1#caption,
+div#layouts_mypage h1#caption {
+    margin:          0 0 20px 0;
+}
+
+div#layouts_mypage h2.second {
+    margin:          30px 0 0 0;
+}
+
+div#layouts_mypage p,
+div#layouts_mypage ul li {
+    line-height:     20px;
+}
+
+div#layouts_mypage p.tx {
+    margin:          10px 0 20px 0;
+}
+
+
+/** div#form */
+/**************************************/
+table#form_frame {
+    width:           735px;
+    margin:          10px 0 0 0;
+}
+
+table#form_frame input[type="text"] {
+    font-size:       14px;
+    color:           #4c4c4c;
+    border:          1px solid #97dbf3;
+    padding:         5px;
+    background:      #fefcf1;
+}
+
+table#form_frame input[type="password"] {
+    font-size:       14px;
+    color:           #4c4c4c;
+    border:          1px solid #97dbf3;
+    padding:         5px;
+    background:      #fefcf1;
+}
+
+table#form_frame tr.first th,
+table#form_frame tr.first td {
+    border-top:      2px solid #6eccee;
+}
+
+table#form_frame tr th {
+    text-align:      right;
+    width:           150px;
+    background:      #e9f9fe;
+    font-weight:     normal;
+}
+
+table#form_frame tr th em {
+    color:           #ff0000;
+}
+
+table#form_frame th,
+table#form_frame td {
+    padding:         15px;
+    border-bottom:   1px dotted #999999;
+}
+
+table#form_frame td.field_name input {
+    width:           100px;
+}
+
+table#form_frame td.field_birthday input {
+    width:           50px;
+}
+
+table#form_frame input#zip_1,
+table#form_frame input#zip_2 {
+    width:           40px;
+}
+
+table#form_frame input#city_2,
+table#form_frame input#city_3,
+table#form_frame input#tel_1,
+table#form_frame input#tel_2,
+table#form_frame input#mail,
+table#form_frame input#mail_confirm,
+table#form_frame input#mail_q,
+table#form_frame input#mail_a {
+    width:           300px;
+}
+
+table#form_frame input#tel_1-1,
+table#form_frame input#tel_1-2,
+table#form_frame input#tel_1-3,
+table#form_frame input#tel_2-1,
+table#form_frame input#tel_2-2,
+table#form_frame input#tel_2-3{
+    width:           80px;
+}
+
+table#form_frame img {
+    vertical-align: middle;
+}
+
+table#form_frame div.note_zip {
+    margin:          5px 0 0 0;
+}
+
+div#submit {
+    width:           332px;
+    margin:          0 auto;
+}
+
+div#submit > * {
+    float:           left;
+}
+
+div#submit a:first-child {
+    margin:          20px 30px 0 0;
+}
+
+a.edit, a.entry, a.change, a.confirm, a.reset, a.add {
+    display:         block;
+    text-indent:     -9999px;
+    width:           151px;
+    height:          31px;
+    margin:          20px auto 0 auto;
+}
+
+a.confirm { background : url("../../img/mypage/change/btn_confirm.gif") left top no-repeat;}
+a.edit    { background : url("../../img/mypage/change_confirm/btn_edit.gif") left top no-repeat;}
+a.entry   { background : url("../../img/mypage/change_confirm/btn_entry.gif") left top no-repeat;}
+a.change  { background : url("../../img/mypage/password/btn_change.gif") left top no-repeat;}
+a.reset   { background : url("../../img/mypage/delivery/btn_reset.gif") left top no-repeat; }
+a.add     { background : url("../../img/mypage/delivery_addr/btn_add.gif") left top no-repeat; }
+
+
+/** complate */
+/**************************************/
+div#layouts_mypage p.red {
+    color:           #ff0000;
+}
+
+div#layouts_mypage p.attention {
+    background:      url("../../img/mypage/change_complete/icon_attention.gif") no-repeat 0 4px;
+    padding:         0 0 0 18px;
+}
+
+
+/** div.menu_mypage */
+/**************************************/
+div.menu_mypage {
+    background:      #fffce6;
+    border-left:     1px solid #fcd409;
+    border-right:    1px solid #fcd409;
+}
+
+div.menu_mypage div#history > ul,
+div.menu_mypage div#change > ul,
+div.menu_mypage div#confirm > ul {
+    padding:         15px;
+}
+
+div.menu_mypage div#history > ul a,
+div.menu_mypage div#change > ul a,
+div.menu_mypage div#confirm > ul a {
+    background:      url("../../img/mypage/index/arrow_blue.png") no-repeat left;
+    padding:         0 0 0 15px;
+    line-height:     23px;
+}
+
+div.menu_mypage div#history ul ul {
+    margin:          5px 0 5px 15px;
+}
+
+div.menu_mypage div#history ul ul li {
+    background:      url("../../img/mypage/index/icon_orange.png") no-repeat left;
+    padding:         0 0 0 15px;
+    line-height:     18px;
+}
+
+div.menu_mypage div#confirm {
+    border-bottom:   1px solid #fcd409;
+}
+
+/** ============================== Add BS ============================== **/
+span.necessary {
+    color: red;
+}
+/** ============================== Add BS ============================== **/
+
+.information_share {
+    margin: auto;
+    margin-top: 10px;
+    padding: auto;
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.twitter, .facebook, .googleplus, .line {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2.contact {
+    background:#eeeeee;
+    border:1px solid #cccccc;
+    padding: 10px 25px;
+    margin-bottom: 30px;
+}
+h2.c_b {
+    color: #ffffff;
+    background-color: #38a8f2;
+}
+
+p.contact {
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+a.contact,
+a.contact-r {
+    width: 80%;
+    margin: 0 25px 20px;
+    padding: 18px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.02em;
+    background-color: #38a8f2;
+    border-radius: 2px;
+    display: inline-block;
+}
+a.contact-r {
+    color: #38a8f2;
+    background-color: #fff;
+    border: solid 1px #38a8f2;
+}
+
+select.contact {
+    height: 35px;
+}
+
+.faq_view{
+    background-color: #f0f8ff;
+    margin-top: 30px;
+    padding: 20px 25px;
+    border: 1px solid #000;
+}
+.faq_view + p{
+    margin-top: 30px !important;
+}
+.faq_view h2{
+    padding-left: 0;
+}
+.faq_view h2:before{
+    display: none;
+}
+.faq_view .txtBox p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.switchArea {
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+    font-size: 12px;
+
+    position: relative;
+    margin: auto;
+    width: 63px;
+    background: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+.switchArea input[type="checkbox"] {
+    display: none;
+}
+.switchArea label {
+    display: block;
+    box-sizing: border-box;
+    height: 30px;
+    border: 2px solid #999999;
+    border-radius: 15px;
+}
+.switchArea input[type="checkbox"]:checked +label {
+    border-color: #78bd78;
+}
+.switchArea label span:after{
+    content: "OFF";
+    padding: 0 0 0 18px;
+    color: #999999;
+}
+.switchArea input[type="checkbox"]:checked + label span:after{
+    content: "ON";
+    padding: 0 18px 0 0;
+    color: #78bd78;
+}
+.switchArea #swImg {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #999999;
+    top: 4px;
+    left: 4px;
+    border-radius: 11px;
+    transition: .2s;
+}
+.switchArea input[type="checkbox"]:checked ~ #swImg {
+    transform: translateX(33px);
+    background: #78bd78;
+}
